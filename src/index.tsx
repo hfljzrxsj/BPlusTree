@@ -1,7 +1,8 @@
 import { StrictMode } from 'react';
 import './index.scss';
 import { render } from 'react-dom';
-import App from './App';
+// import App from './App';
+import BPlusTree from './pages/BPlusTree';
 // import './utils/Date';
 // import { register } from './serviceWorkerRegistration';
 // import './mock';
@@ -15,7 +16,7 @@ import App from './App';
 // createRoot(container).
 render(
   <StrictMode>
-    <App />
+    < BPlusTree />
   </StrictMode>
   , document.body
 );
