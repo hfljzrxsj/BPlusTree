@@ -7,7 +7,7 @@ const {
   requestAnimationFrame,
   requestIdleCallback,
   setTimeout,
-} = window ?? self ?? globalThis ?? global ?? this;
+} = window ?? self ?? globalThis ?? global ?? parent ?? this;
 export default (resolve: () => void = () => { }) =>
   requestIdleCallback?.(() => setTimeout?.(() =>
     requestAnimationFrame?.(() =>

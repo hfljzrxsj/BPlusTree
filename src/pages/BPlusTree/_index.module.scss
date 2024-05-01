@@ -1,3 +1,50 @@
-.dialog {
+.Paper {
   padding: 9q;
+  // text-align: center;
+  display: flex;
+  gap: 9q;
+
+  > div {
+    padding: 9q;
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 9q;
+
+    &.CRUD {
+      p {
+        text-align: center;
+      }
+    }
+
+    &:nth-child(2n) {
+      flex: 1;
+    }
+
+    &:first-child {
+      > div {
+        padding: 9q;
+        text-align: center;
+      }
+    }
+
+    ul {
+      padding-left: 9q;
+      list-style: inside;
+    }
+
+    &:last-child {
+      > div {
+        padding-right: 9q;
+      }
+
+      max-height: 90vh;
+      overflow: auto;
+
+      h5 {
+        text-align: center;
+        margin: 9%;
+      }
+    }
+  }
 }

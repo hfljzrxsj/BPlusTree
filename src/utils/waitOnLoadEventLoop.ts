@@ -4,7 +4,7 @@ const {
   Promise,
   addEventListener,
   console
-} = window ?? self ?? globalThis ?? global ?? this;
+} = window ?? self ?? globalThis ?? global ?? parent ?? this;
 export const waitOnLoadEventLoop = (callback: () => void = () => { }) => addEventListener('load', () => new Promise<void>(resolve =>
   cb?.(resolve)
 )?.then?.(() =>
