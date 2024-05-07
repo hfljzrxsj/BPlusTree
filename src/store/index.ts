@@ -3,8 +3,8 @@ import { legacy_createStore as createStore, applyMiddleware, combineReducers } f
 import thunk from 'redux-thunk';
 // import { configureStore, type ThunkAction, type Action } from '@reduxjs/toolkit';
 import SnackBarReducer from './SnackBarRuducer';
-import AppBarTitleReducer from './AppBarTitleRuducer';
-import DBReducer from './DBReducer';
+// import AppBarTitleReducer from './AppBarTitleRuducer';
+// import DBReducer from './DBReducer';
 import type { RRN_ } from '@/types';
 export interface actionInterface<T = {}, D = {}> {
   readonly type: RRN_<D>;
@@ -12,16 +12,16 @@ export interface actionInterface<T = {}, D = {}> {
 }
 enum ReducerName {
   SnackBar = 'SnackBar',
-  AppBarTitle = 'AppBarTitle',
-  DB = 'DB'
+  // AppBarTitle = 'AppBarTitle',
+  // DB = 'DB'
 }
 export type TypedUseSelectorHookState<T> = {
   [x in ReducerName]: T;
 };
 const reducer = combineReducers({
   [ReducerName.SnackBar]: SnackBarReducer,
-  [ReducerName.AppBarTitle]: AppBarTitleReducer,
-  [ReducerName.DB]: DBReducer
+  // [ReducerName.AppBarTitle]: AppBarTitleReducer,
+  // [ReducerName.DB]: DBReducer
 });
 const rootReducer = createStore(reducer, applyMiddleware(thunk));
 // rootReducer.dispatch({ type: enumActionName.OPENTRUE });
