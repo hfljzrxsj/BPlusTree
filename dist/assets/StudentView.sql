@@ -1,0 +1,2 @@
+DROP VIEW IF EXISTS StudentView;
+Create View IF NOT EXISTS StudentView AS SELECT student_id,student_name,College.college_name,Class.class_name FROM Students LEFT JOIN College ON Students.college_id=College.college_id LEFT JOIN Class ON Students.class_id=Class.class_id;

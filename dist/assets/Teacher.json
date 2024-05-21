@@ -1,0 +1,1 @@
+[ { "id": "teacher_id", "name": "教师编号", "primary": true, "type": "number" }, { "id": "teacher_name", "name": "姓名" }, { "id": "sex", "type": "enum", "enum": [ "女", "男" ], "name": "性别" }, { "id": "hire_date", "name": "入职日期" }, { "id": "age", "name": "年龄", "type": "between" } ]

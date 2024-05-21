@@ -1,0 +1,2 @@
+DROP VIEW IF EXISTS StudentScoreView;
+CREATE VIEW IF NOT EXISTS StudentScoreView AS SELECT Students.student_id AS student_id,Count(Grade.student_id) as Count,AVG(Grade.score*Course.credit_hours) AS AvgScore,SUM(Grade.score*Course.credit_hours) AS SumScore,SUM(Course.credit_hours) AS Sum_credit_hours FROM Students LEFT JOIN Grade ON Students.student_id=Grade.student_id LEFT JOIN Course ON Course.course_id=Grade.course_id GROUP BY Students.student_id HAVING COUNT(Grade.student_id) >= 1 ORDER BY AvgScore DESC;

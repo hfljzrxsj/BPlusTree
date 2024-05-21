@@ -1,0 +1,1 @@
+[ { "id": "course_id", "name": "课程编号", "primary": true, "type": "number" }, { "id": "course_name", "name": "课程名称" }, { "id": "college_id", "name": "所属学院", "type": "enum", "foreignTable": "College", "foreignKey": "college_name" }, { "id": "credit_hours", "name": "学分", "type": "between", "min": 0.5, "max": 5, "step": 0.5 }, { "id": "log_time", "name": "开设时间" } ]

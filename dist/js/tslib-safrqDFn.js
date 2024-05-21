@@ -1,0 +1,1 @@
+function l(o,a){var r=typeof Symbol=="function"&&o[Symbol.iterator];if(!r)return o;var n=r.call(o),e,u=[],t;try{for(;(a===void 0||a-- >0)&&!(e=n.next()).done;)u.push(e.value)}catch(i){t={error:i}}finally{try{e&&!e.done&&(r=n.return)&&r.call(n)}finally{if(t)throw t.error}}return u}export{l as _};

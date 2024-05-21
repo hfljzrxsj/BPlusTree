@@ -1,0 +1,1 @@
+[ { "id": "college_id", "name": "学院编号", "primary": true, "type": "number" }, { "id": "college_name", "name": "学院名称" }, { "id": "teacher_id", "name": "院长", "type": "enum", "foreignTable": "Teacher", "foreignKey": "teacher_name" } ]

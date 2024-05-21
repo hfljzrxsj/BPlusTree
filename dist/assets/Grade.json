@@ -1,0 +1,1 @@
+[ { "id": "student_id", "name": "学生", "primary": true, "type": "enum", "foreignTable": "Students", "foreignKey": "student_name" }, { "id": "course_id", "name": "课程名称", "primary": true, "type": "enum", "foreignTable": "Course", "foreignKey": "course_name" }, { "id": "score", "name": "分数", "type": "between" } ]

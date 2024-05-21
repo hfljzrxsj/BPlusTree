@@ -1,0 +1,1 @@
+[ { "path": "Basic", "children": [ "Teacher", "College", "Class", "Students", "Course", "Grade", "TeacherCourse" ] }, { "path": "Experimental", "children": [ "StudentScoreView", "GradeLog" ] } ]
